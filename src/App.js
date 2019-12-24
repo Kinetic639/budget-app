@@ -7,10 +7,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <p>Działam</p>
+      <p>Działam!</p>
     </div>
   );
 }
 
 export default App;
- 
