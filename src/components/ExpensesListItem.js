@@ -1,13 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import moment from "moment";
+import numeral from 'numeral'
 
-const ExpensesListItem = ({
-  id,
-  description,
-  amount,
-  createdAt,
-  note
-}) => {
+numeral.register('locale', 'pl', {
+  delimiters: {
+      thousands: ' ',
+      decimal: '.'
+  },
+  abbreviations: {
+      thousand: 'k',
+      million: 'm',
+      billion: 'b',
+      trillion: 't'
+  },
+  ordinal : function (number) {
+      return number === 1 ? 'er' : 'ème';
+  },
+  currency: {
+      symbol: 'zł'
+  }
+});
+
+// switch between locales
+numeral.locale('pl');
+
+const ExpensesListItem = ({ id, description, amount, createdAt, note }) => {
   return (
     <li>
       <Link to={`/edit/${id}`}>
@@ -15,9 +33,7 @@ const ExpensesListItem = ({
         <h4> {description}</h4>
       </Link>
       <p>
-        {" "}
-        Amount: {amount} || Created: {createdAt} || Note: {note}
-      
+  {numeral(amount / 100).format('0,0[.]00 $')}{` - `}{moment(createdAt).format("DD/MM/YYYY")}{` - ${note}`}
       </p>
     </li>
   );
