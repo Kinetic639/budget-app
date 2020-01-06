@@ -1,0 +1,35 @@
+[33mcommit 1aaff3ad25682751f64dd5ad551336e3175cc67f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Michal Stepien <michal.stepien36@gmail.com>
+Date:   Mon Jan 6 11:19:41 2020 +0100
+
+    remove dummy expense data
+
+[33mcommit a989c0c2c69dd4faec45ea39ba9f9a10b8487e74[m
+Author: Michal Stepien <michal.stepien36@gmail.com>
+Date:   Mon Jan 6 11:11:05 2020 +0100
+
+    testing intro
+
+[33mcommit 89da3bd1adc16f01f449b2fff4683e8ec93c178c[m
+Author: Michal Stepien <michal.stepien36@gmail.com>
+Date:   Mon Jan 6 08:53:57 2020 +0100
+
+    single date picker and much more
+
+[33mcommit 8cf93a8152bf60189ba1469a6db9acfdc333963d[m
+Author: Michal Stepien <michal.stepien36@gmail.com>
+Date:   Wed Jan 1 21:57:56 2020 +0100
+
+    redux
+
+[33mcommit d722102027519beaaf86ccc76f0c3b91a68c5b72[m
+Author: Michal Stepien <michal.stepien36@gmail.com>
+Date:   Tue Dec 24 19:09:03 2019 +0100
+
+    first commit
+
+[33mcommit 364e7ba64bb371ed731935b75bb84d53cb7073ef[m
+Author: Michal Stepien <michal.stepien36@gmail.com>
+Date:   Tue Dec 24 19:07:40 2019 +0100
+
+    Initial commit
