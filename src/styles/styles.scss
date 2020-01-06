@@ -7,3 +7,13 @@
     color: lightblue;
     text-decoration: none;
 }
+
+.addForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.expense-list {
+    list-style: none;
+}
