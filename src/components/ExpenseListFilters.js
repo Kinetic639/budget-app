@@ -55,6 +55,9 @@ export class ExpenseListFilters extends Component {
           onFocusChange={this.onFocusChange}
           startDateId="your_unique_start_date_id"
           endDateId="your_unique_end_date_id"
+          numberOfMonths={1}
+          isOutsideRange={() => false}
+          showClearDates={true}
         />
       </div>
     );
