@@ -9,9 +9,13 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest"
+    "test": "jest",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
+
   },
   "dependencies": {
+    "express": "^4.17.1",
     "live-server": "^1.2.0",
     "moment": "^2.24.0",
     "normalize.css": "^8.0.1",
