@@ -4,22 +4,22 @@ exports[`should render Header correctly 1`] = `
 <nav
   className="nav-bar"
 >
-  <ForwardRef
+  <NavLink
     activeClassName="active"
     exact={true}
     to="/"
   >
     Dashboard
-  </ForwardRef>
-  <ForwardRef
+  </NavLink>
+  <NavLink
     to="/create"
   >
     Create expense
-  </ForwardRef>
-  <ForwardRef
+  </NavLink>
+  <NavLink
     to="/help"
   >
     Help
-  </ForwardRef>
+  </NavLink>
 </nav>
 `;
