@@ -6,8 +6,8 @@ import ExpensesSummary from "./ExpensesSummary";
 export default function ExpenseDashboardPage(props) {
   return (
     <div>
-      <ExpenseListFilters />
       <ExpensesSummary />
+      <ExpenseListFilters />
       <ExpensesList />
     </div>
   );
