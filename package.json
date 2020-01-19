@@ -18,6 +18,7 @@
   "dependencies": {
     "enzyme-to-json": "^3.4.3",
     "express": "^4.17.1",
+    "firebase": "^7.7.0",
     "moment": "^2.24.0",
     "normalize.css": "^8.0.1",
     "numeral": "^2.0.6",

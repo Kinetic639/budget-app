@@ -6,6 +6,7 @@ import "./styles/styles.scss";
 import AppRouter from "./routers/AppRouter";
 import configureStore from "./store/ConfigureStore";
 import { addExpense } from "./actions/Expenses";
+import "./firebase/firebase";
 
 const store = configureStore();
 
