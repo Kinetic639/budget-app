@@ -27,7 +27,7 @@ module.exports = {
       template: "./src/index.html"
     })
   ],
-  devtool: "inline-source-map",
+  devtool: "cheap-module-eval-source-map",
   devServer: {
     contentBase: path.join(__dirname, "public")
   }
