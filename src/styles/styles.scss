@@ -1,2 +1,8 @@
-@import './base/settings';
-@import './base/base';
+@import "./base/settings";
+@import "./base/base";
+
+.active {
+  color: lightblue;
+  text-decoration: none;
+  font-weight: bold;
+}

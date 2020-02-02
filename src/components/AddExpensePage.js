@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class AddExpensePage extends Component {
-    render() {
-        return (
-            <div>
-                Add new expense
-            </div>
-        )
-    }
+const AddExpensePage = () => {
+    return (
+        <div>
+            add expense page v2 
+        </div>
+    )
 }
 
 export default AddExpensePage

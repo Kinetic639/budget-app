@@ -1,9 +1,10 @@
 import React from 'react'
 
-function ExpenseDashboardPage() {
+const ExpenseDashboardPage = () => {
     return (
         <div>
-            dashboard page
+            expense dashboard v2
+            
         </div>
     )
 }
