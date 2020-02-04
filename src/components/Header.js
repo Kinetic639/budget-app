@@ -10,7 +10,6 @@ const Header = () => {
           Dashboard
         </NavLink>
         <NavLink to="/create">Create expense</NavLink>
-        <NavLink to="/edit">Edit expense</NavLink>
         <NavLink to="/help">Help</NavLink>
       </header>
     </div>
