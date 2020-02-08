@@ -2,10 +2,11 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/playground/redux-expensify.js",
-  // entry: "./src/index.js",
+  // entry: "./src/playground/redux-expensify.js",
+  entry: "./src/App.js",
   output: {
-    path: path.join(__dirname, "/public"),
+    path: path.resolve(__dirname, "public"),
+    publicPath: "/",
     filename: "bundle.js"
   },
   module: {
@@ -30,7 +31,8 @@ module.exports = {
   ],
   devtool: "cheap-module-eval-source-map",
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    contentBase: "./public/",
     historyApiFallback: true
+    // port: 3000
   }
 };

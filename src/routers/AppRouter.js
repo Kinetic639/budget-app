@@ -9,14 +9,16 @@ import Header from "../components/Header";
 
 const AppRouter = () => (
   <Router>
-    <Header />
-    <Switch>
-      <Route path="/" component={ExpenseDashboardPage} exact></Route>
-      <Route path="/create" component={AddExpensePage}></Route>
-      <Route path="/edit/:id" component={EditExpensePage}></Route>
-      <Route path="/help" component={HelpPage}></Route>
-      <Route component={NotFoundPage}></Route>
-    </Switch>
+    <div>
+      <Header />
+      <Switch>
+        <Route path="/" component={ExpenseDashboardPage} exact={true} />
+        <Route path="/create" component={AddExpensePage} />
+        <Route path="/edit/:id" component={EditExpensePage} />
+        <Route path="/help" component={HelpPage} />
+        <Route component={NotFoundPage} />
+      </Switch>
+    </div>
   </Router>
 );
 
