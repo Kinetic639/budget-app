@@ -1,14 +1,14 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CSSExtract = new ExtractTextPlugin("/dist/styles.css");
+const CSSExtract = new ExtractTextPlugin("styles.css");
 
 module.exports = {
   // entry: "./src/playground/redux-expensify.js",
   entry: "./src/App.js",
   output: {
     path: path.join(__dirname, "public", "dist"),
-    // publicPath: "/dist/S",
+    // publicPath: "/",
     filename: "bundle.js"
   },
 
