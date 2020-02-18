@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { AddExpensePage } from "../../components/AddExpensePage";
+import { startAddExpense } from "../../components/startAddExpense";
 import expenses from "../fixtures/expenses";
 
 let addExpense, history, wrapper;
@@ -9,11 +9,11 @@ beforeEach(() => {
   addExpense = jest.fn();
   history = { push: jest.fn() };
   wrapper = shallow(
-    <AddExpensePage addExpense={addExpense} history={history} />
+    <startAddExpense addExpense={addExpense} history={history} />
   );
 });
 
-test("should render AddExpensePage correctly", () => {
+test("should render startAddExpense correctly", () => {
   expect(wrapper).toMatchSnapshot();
 });
 
