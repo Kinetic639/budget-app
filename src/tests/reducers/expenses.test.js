@@ -47,17 +47,25 @@ test("should not edit epense with id", () => {
   expect(state).toEqual(expenses);
 });
 
+test("should add new expense with given values", () => {
+  const expense = {
+    id: "4",
+    description: "shopping",
+    note: "",
+    amount: 123456,
+    createdAt: 987654
+  };
 
-test('should add new expense with given values', () => {
-    const expense = {
-        id: '4',
-        description: 'shopping',
-        note: '',
-        amount: 123456,
-        createdAt: 987654
-    }
+  const action = { type: "ADD_EXPENSE", expense };
+  const state = expensesReducer(expenses, action);
+  expect(state).toEqual([...expenses, expense]);
+});
 
-    const action = {type: 'ADD_EXPENSE', expense}
-    const state =  expensesReducer(expenses, action)
-    expect(state).toEqual([...expenses, expense])
-})
+test("should set expenses", () => {
+  const action = {
+    type: "SET_EXPENSES",
+    expenses: [expenses[1]]
+  };
+  const state = expensesReducer(expenses, action);
+  expect(state).toEqual([expenses[1]]);
+});
