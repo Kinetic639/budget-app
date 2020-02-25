@@ -1,6 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CSSExtract = new ExtractTextPlugin("styles.css");
 
@@ -22,9 +22,6 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/index.html"
-    }),
     CSSExtract,
     new webpack.DefinePlugin({
       "process.env.FIREBASE_API_KEY": JSON.stringify(
