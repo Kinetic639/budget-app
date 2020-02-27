@@ -60,6 +60,14 @@ module.exports = {
         }
       },
       {
+        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot)$/,
+        use: "file-loader?name=assets/[name].[hash].[ext]"
+      },
+      {
+        test: /\.(ico)$/,
+        use: "file-loader?name=assets/[name].[ext]"
+      },
+      {
         test: /\.s?css$/,
         use: CSSExtract.extract({
           use: [
