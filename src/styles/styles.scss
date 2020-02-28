@@ -1,11 +1,7 @@
 @import "./base/settings";
 @import "./base/base";
-@import "./components//box-layout";
-@import './components//button';
-
-
-.active {
-  color: lightblue;
-  text-decoration: none;
-  font-weight: bold;
-}
+@import "./components/box-layout";
+@import "./components/button";
+@import "./components/header";
+@import "./components/page-header";
+@import "./base//content-container";
