@@ -5,11 +5,11 @@ import { startLogin } from "../actions/auth";
 export const LoginPage = ({ startLogin }) => {
   return (
     <div className="box-layout">
-      <div className='box-layout__box'>
-        <h1 className="box-layout__title">Expensify App</h1>
+      <div className="box-layout__box">
+        <h1 className="box-layout__title">Expensify</h1>
         <p>Time to get your expenses under control.</p>
-        <button className="test" onClick={startLogin}>
-          Log in
+        <button className="button" onClick={startLogin}>
+          Login with Google
         </button>
       </div>
     </div>
