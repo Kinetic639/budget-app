@@ -1,5 +1,5 @@
 .page-header {
-  background: #f7f7f7;
+  background: $off-white;
   padding: $l-size 0;
   margin-bottom: $l-size;
 
@@ -10,7 +10,7 @@
     margin: 0;
     font-weight: 300;
     & span {
-        font-weight: 700;
+      font-weight: 700;
     }
   }
 }

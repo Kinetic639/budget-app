@@ -1,7 +1,7 @@
 @import "./base/settings";
 @import "./base/base";
 @import "./base/content-container";
-@import "./base/visibility";
+@import "./components/loaders";
 @import "./components/box-layout";
 @import "./components/button";
 @import "./components/header";
@@ -9,7 +9,7 @@
 @import "./components/input-group";
 @import "./components/inputs";
 @import "./components/form";
-@import "./components/expenses-list";
+@import "./components/list";
 
 //media
 @import "./base/media";

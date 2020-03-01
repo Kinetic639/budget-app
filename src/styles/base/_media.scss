@@ -11,6 +11,21 @@
   .show-for-mobile {
     display: none;
   }
+
+  .list-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: $m-size;
+
+    &__data {
+      margin: 0;
+      padding-left: $s-size;
+    }
+  }
+  .list-body {
+    margin-bottom: $l-size;
+  }
 }
 
 @media (max-width: $desktop-breakpoint - 0.1rem) {

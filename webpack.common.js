@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === "test") {
 
 module.exports = {
   // entry: "./src/playground/redux-expensify.js",
-  entry: "./src/App.js",
+  entry: ["@babel/polyfill", "./src/App.js"],
   output: {
     path: path.join(__dirname, "public", "dist"),
     // publicPath: "/",
