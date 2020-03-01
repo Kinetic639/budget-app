@@ -5,7 +5,7 @@ import numeral from "numeral";
 
 const ExpenseListItem = ({ id, description, amount, createdAt, note }) => {
   return (
-    <li>
+    <div>
       <Link to={`/edit/${id}`}>
         <h3>{description}</h3>
       </Link>
@@ -13,7 +13,7 @@ const ExpenseListItem = ({ id, description, amount, createdAt, note }) => {
         {numeral(amount / 100).format("$0,0.00")}-
         {moment(createdAt).format("DD, MM, YYYY")}
       </p>
-    </li>
+    </div>
   );
 };
 export default ExpenseListItem;

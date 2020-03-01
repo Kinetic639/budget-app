@@ -1,0 +1,20 @@
+@media (min-width: $desktop-breakpoint) {
+  .input-group {
+    flex-direction: row;
+    margin-bottom: $l-size;
+
+    &__item {
+      margin: 0 $s-size 0 0;
+    }
+  }
+
+  .show-for-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $desktop-breakpoint - 0.1rem) {
+  .show-for-desktop {
+    display: none;
+  }
+}
